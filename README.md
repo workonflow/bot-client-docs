@@ -105,7 +105,7 @@ console.log(response)
 - **streamId** - id потока (для публикации комментария в общем чате потока);
 - **threadId** - id задачи (для публикации комментария в задаче);
 - **to** - id пользователя в системе, может также принимать массив id пользователей (если указать только поле **to** то комментарий будет опубликован в *личных* сообщениях);
-- **att** - имеет вид типа: [{ type: 'text' data: { text: 'string' } }] (**type** - тип сообщения может быть *text*, *file*. **data** - объект с текстом либо id файла)
+- **att** - принимает текст либо массив типа: [{ type: 'text' data: { text: 'string' } }] (**type** - тип сообщения может быть *text*, *file*. **data** - объект с текстом либо id файла)
 
 > Пример ответа
 ```js
@@ -727,7 +727,10 @@ console.log(response)
 где query может принимать параметры:
 - **id** - id задачи;
 - **statusId** - id статуса (вернет все задачи в данном статусе);
+- **statusIds** - массив ids статусов
 - **streamId** - id потока (вернёт все задачи потока)
+- **ltUpdatedAt** - (less then) ограничение по времени создания > меньше чем
+- **gtUpdatedAt** - (greater then) ограничение по времени создания < больше чем
 
 > Пример ответа смотри [тут](./sorta-docs/thread-read-response.md)
 
@@ -768,12 +771,12 @@ console.log(response)
 
 #### <a name="user-content-thread-set-description">thread.setDescription</a>
 
-Метод для изменения описания задачи (метод в разработке)
+Метод для изменения описания задачи
 
 ```js
 const { thread } = botClient
 const query = {
-  content: 'content in JSON format',
+  content: 'some text',
   id: "thread id"
 }
 const response = await thread.setDescription(teamId, { query })
