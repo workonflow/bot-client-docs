@@ -1,0 +1,27 @@
+Stream
+  OK  .create {
+      name <string>,
+      settings: <Object>
+    }
+  OK  .read {
+      id <string>
+    }
+  OK  .delete {
+      id <string>
+    }
+  OK  .setName {
+      id <string>,
+      name <string>
+    }
+  OK  .deleteUser {
+      id <string>,
+      userId <string>
+    }
+  OK  .setAdmin {
+      id <string>,
+      userId <string>
+    }
+  OK  .setUser {
+      id <string>,
+      userId <string>
+    }

@@ -1,0 +1,20 @@
+Mail 
+  .read {
+    id <string>,
+    ids <Array<string>>
+  }
+  .send {
+    from <string>,
+    to <string>|<Array<string>>,
+    headers <Object>,
+    subject <string>,
+    text <string>,
+    html <string>,
+    attachment <Array<Object>>
+  }
+  .getAccounts {
+    id <string>,
+    ids Array<<string>>,
+    isPrivate <bool>,
+    email <string>
+  }

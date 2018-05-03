@@ -1,0 +1,22 @@
+Telephony 
+  .createUser {
+    username <string>,
+    password <string>,
+    domain <string>,
+    contactId <string>
+  }
+  .getUser {
+    contactId <string>,
+    username <string>,
+    id <string>
+  }
+  .deleteUser {
+    id
+  }
+  .updateUser {
+    id,
+    username,
+    password,
+    contactId,
+    domain
+  }

@@ -1,0 +1,16 @@
+Comment 
+  OK  .create {
+      streamId <string>,
+      threadId <string>
+      to <string>| <Array<string>>,
+      metadata <Object>,
+      att: <Array<Object>> 
+    }
+  OK  .read {
+      streamId,
+      threadId
+      id
+    }
+  OK  .delete {
+      id
+    }

@@ -1,0 +1,5 @@
+File
+  OK  .getGETUrl {
+      id <string>
+      ids <Array<string>>
+    }

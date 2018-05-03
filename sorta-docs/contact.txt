@@ -1,0 +1,12 @@
+Contact 
+    .create {
+      basicData <Object>,
+      customFields <Array<Object>>
+    }
+    .read {
+      id <string>,
+      billingType <string>
+    }
+    .getLocale {
+      id <string>
+    }

@@ -1,0 +1,11 @@
+Team 
+  .read {
+
+  }
+  .inviteUser {
+    email,
+    name
+  }
+  .getAccesses {
+    
+  }

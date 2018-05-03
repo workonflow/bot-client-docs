@@ -1,0 +1,47 @@
+Thread 
+  OK  .create {
+      statusId <string>,
+      streamId <string>,
+      title <string>,
+      deadline <Array[2] <null|int>>
+      responsibleUserId <string>,
+      roles <Array<string>>
+    } 
+  OK  .read {
+      id <string>,
+      statusId <string>,
+      streamId <string>,
+      title <string>
+    }
+  OK  .setStatus {
+      id <string>,
+      statusId <string>
+    }
+  OK  .setStream {
+      id <string>,
+      streamId <string>
+    }
+  OK  .setBudget {
+      id <string>,
+      budget <string>
+    }
+  OK  .setPriority {
+      id <string>, 
+      priority <string: LOW | HIGH>
+    }
+  OK  .setResponsible {
+      id <string>,
+      userId <string>
+    }
+  OK  .setTitle {
+      id <string>,
+      title <string>
+    }
+  OK  .setDescription {
+      id <string>,
+      content: <JSONstring> 
+    }
+  OK  .setDeadline {
+      id <string>,
+      deadline: <Array[2] null|int>
+    }

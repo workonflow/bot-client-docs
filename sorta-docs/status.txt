@@ -1,0 +1,15 @@
+Status
+  OK  .create {
+      streamId <string>,
+      name <string>,
+      type <string Wait|In progress|Done>,
+      color <hex string>
+    }
+  OK  .read {
+      id <string>,
+      streamId <string>
+    }
+  OK  .setName {
+      id <string>,
+      name <string>
+    }
