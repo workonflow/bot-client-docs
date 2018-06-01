@@ -33,23 +33,25 @@ comment.onDirect(async message => {
 })
 ```
 
-|[comment](#comment)                           |[contact](#contact)                           |[status](#status)                        |[stream](#stream)                                    |[team](#team)                                                     |[thread](#thread)                                              |
-|---|---|---|---|---|---|
-|[count](#user-content-comment-conunt)         |[create](#user-content-contact-create)        |[create](#user-content-status-create)    |[create](#user-content-stream-create)                |[getAccesses](#user-content-team-get-accesses)                    |[create](#user-content-thread-create)                          |
-|[create](#user-content-comment-create)        |[getLocale](#user-content-contact-get-locale) |[read](#user-content-status-read)        |[deleteUser](#user-content-stream-delete-user)       |[inviteUser](#user-content-team-invite-user)                      |[onBudgetUpdated](#user-content-thread-on-budget-updated)    |
-|[onCreated](#user-content-comment-on-created) |[read](#user-content-contact-read)            |[setName](#user-content-status-set-name) |[delete](#user-content-stream-delete)                |[onAdminStatusGiven](#user-content-team-on-admin-status-given)    |[onCreated](#user-content-thread-on-created)                  |
-|[onDirect](#user-content-comment-on-direct)   |                                              |                                         |[onUserDeleted](#user-content-stream-on-user-deleted)|[onAdminStatusRevoked](#user-content-team-on-admin-status-revoked)|[onDeadlineUpdated](#user-content-thread-on-deadline-updated)|
-|[onEcho](#user-content-comment-on-echo)       |                                              |                                         |[onUserSet](#user-content-stream-on-user-set)        |[onUserInvited](#user-content-team-on-user-invited)               |[onStatusUpdated](#user-content-thread-status-updated)          |
-|[onMention](#user-content-comment-on-mention) |                                              |                                         |[read](#user-content-stream-read)                    |[onUserRemoved](#user-content-team-on-user-removed)               |[readDescription](#user-content-thread-read-description)      |
-|[read](#user-content-comment-read)            |                                              |                                         |[setAdmin](#user-content-stream-set-admin)           |[read](#user-content-team-read)                                   |[read](#user-content-thread-read)                              |
-|                                              |                                              |                                         |[setName](#user-content-stream-set-name)             |                                                                  |[setBudget](#user-content-thread-set-budget)                  |
-|                                              |                                              |                                         |[setUser](#user-content-stream-set-user)             |                                                                  |[setDeadline](#user-content-thread-set-deadline)              |
-|                                              |                                              |                                         |                                                     |                                                                  |[setDescription](#user-content-thread-set-description)        |
-|                                              |                                              |                                         |                                                     |                                                                  |[setPriority](#user-content-thread-set-priority)              |
-|                                              |                                              |                                         |                                                     |                                                                  |[setResponsible](#user-content-thread-set-responsible)        |
-|                                              |                                              |                                         |                                                     |                                                                  |[setStatus](#user-content-thread-set-status)                  |
-|                                              |                                              |                                         |                                                     |                                                                  |[setStream](#user-content-thread-set-stream)                  |
-|                                              |                                              |                                         |                                                     |                                                                  |[setTitle](#user-content-thread-set-title)                    |
+|[comment](#comment)                           |[contact](#contact)                           |[status](#status)                        |[stream](#stream)                                     |[team](#team)                                                     |[thread](#thread)                                             |
+|---|---|---|---|---|---| 
+|[count](#user-content-comment-conunt)         |[create](#user-content-contact-create)        |[create](#user-content-status-create)    |[create](#user-content-stream-create)                 |[getAccesses](#user-content-team-get-accesses)                    |[create](#user-content-thread-create)                         |
+|[create](#user-content-comment-create)        |[getLocale](#user-content-contact-get-locale) |[read](#user-content-status-read)        |[deleteUser](#user-content-stream-delete-user)        |[inviteUser](#user-content-team-invite-user)                      |[onBudgetUpdated](#user-content-thread-on-budget-updated)     |
+|[onCreated](#user-content-comment-on-created) |[read](#user-content-contact-read)            |[setName](#user-content-status-set-name) |[delete](#user-content-stream-delete)                 |[onAdminStatusGiven](#user-content-team-on-admin-status-given)    |[onCreated](#user-content-thread-on-created)                  |
+|[onDirect](#user-content-comment-on-direct)   |                                              |                                         |[onUserDeleted](#user-content-stream-on-user-deleted) |[onAdminStatusRevoked](#user-content-team-on-admin-status-revoked)|[onDeadlineUpdated](#user-content-thread-on-deadline-updated) |
+|[onEcho](#user-content-comment-on-echo)       |                                              |                                         |[onUserSet](#user-content-stream-on-user-set)         |[onUserInvited](#user-content-team-on-user-invited)               |[onStatusUpdated](#user-content-thread-status-updated)        |
+|[onMention](#user-content-comment-on-mention) |                                              |                                         |[read](#user-content-stream-read)                     |[onUserRemoved](#user-content-team-on-user-removed)               |[readDescription](#user-content-thread-read-description)      |
+|[read](#user-content-comment-read)            |                                              |                                         |[setAdmin](#user-content-stream-set-admin)            |[read](#user-content-team-read)                                   |[read](#user-content-thread-read)                             |
+|                                              |                                              |                                         |[setName](#user-content-stream-set-name)              |                                                                  |[setBudget](#user-content-thread-set-budget)                  |
+|                                              |                                              |                                         |[setUser](#user-content-stream-set-user)              |                                                                  |[setDeadline](#user-content-thread-set-deadline)              |
+|                                              |                                              |                                         |[setDescription](#user-content-stream-set-description)|                                                                  |[setDescription](#user-content-thread-set-description)        |
+|                                              |                                              |                                         |                                                      |                                                                  |[setPriority](#user-content-thread-set-priority)              |
+|                                              |                                              |                                         |                                                      |                                                                  |[setResponsible](#user-content-thread-set-responsible)        |
+|                                              |                                              |                                         |                                                      |                                                                  |[setStatus](#user-content-thread-set-status)                  |
+|                                              |                                              |                                         |                                                      |                                                                  |[setStream](#user-content-thread-set-stream)                  |
+|                                              |                                              |                                         |                                                      |                                                                  |[setTitle](#user-content-thread-set-title)                    |
+|                                              |                                              |                                         |                                                      |                                                                  |[addCustomers](#user-content-thread-add-customers)            |
+|                                              |                                              |                                         |                                                      |                                                                  |[removeCustomers](#user-content-thread-remove-customer)       |
 
 | [file](#file)           |[mail](#mail)                      |[telephony](#telephony)              |
 |---|---|---|
@@ -495,6 +497,26 @@ console.log(response)
 { code: 200, message: "OK" }
 ```
 
+
+#### <a name="user-content-stream-set-description">stream.setDescription</a>
+
+Метод для добавления описания потока
+
+```js
+const { stream } = botClient
+const query = {
+  id: 'stream id',
+  content: 'some text'
+}
+const response = await stream.setDescription(teamId, { query })
+console.log(response)
+```
+
+> Пример ответа
+```js
+{code: 200, message: "OK"}
+```
+
 ----------
 
 
@@ -868,6 +890,53 @@ console.log(response)
 - **title** - новое имя потока
 
 > Пример ответа смотри [тут](./sorta-docs/thread-setResponsible-response.md)
+
+
+
+#### <a name="user-content-thread-add-customers">thread.addCustomers</a>
+
+Метод для добавления клиентов в задачу
+
+```js
+const { thread } = botClient
+const query = { id: threadId, customerIds: [list customers ids] }
+const response = await thread.addCustomers(teamId, { query })
+console.log(response)
+```
+
+где query может принимать параметры:
+- **id** - id задачи;
+- **customerId** - id клиента;
+- **customerIds** - массив ids клиентов
+
+> Пример ответа
+
+```js
+{ code: 200, message: 'ok' }
+```
+
+
+#### <a name="user-content-thread-remove-customers">thread.removeCustomers</a>
+
+Метод для удаления клиентов в задачу
+
+```js
+const { thread } = botClient
+const query = { id: threadId, customerIds: [list customers ids] }
+const response = await thread.removeCustomers(teamId, { query })
+console.log(response)
+```
+
+где query может принимать параметры:
+- **id** - id задачи;
+- **customerId** - id клиента;
+- **customerIds** - массив ids клиентов
+
+> Пример ответа
+
+```js
+{ code: 200, message: 'ok' }
+```
 
 ---------
 
